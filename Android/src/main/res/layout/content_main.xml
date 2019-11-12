@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/todo_home"
+        android:layout_marginTop="100dp"
+        android:layout_width="368dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/add_todo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a to-do-task"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/edit_todo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit a to-do-task"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/view_todo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View all to-do-tasks"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/student_home"
+        android:layout_marginTop="180dp"
+        android:layout_width="368dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/add_stu_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a new student record"
+            android:textAllCaps="false"            />
+
+        <Button
+            android:id="@+id/edit_stu_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit a student record"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="170dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:text="Please select a menu first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

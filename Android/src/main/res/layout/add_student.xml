@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudent">
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/response">
+
+        <TableLayout
+            android:id="@+id/add_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow android:layout_width="194dp">
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:padding="3dip"
+                    android:text="Profile Image\n(Click the image if you want to change)" />
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="75dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="100dp"
+                    android:maxWidth="100dp"
+                    app:srcCompat="@drawable/default_profile" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:padding="3dip"
+                    android:text="Student ID" />
+
+                <EditText
+                    android:id="@+id/student_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="First Name" />
+
+                <EditText
+                    android:id="@+id/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dip" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Last Name" />
+
+                <EditText
+                    android:id="@+id/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="50dip" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Gender" />
+
+                <RadioGroup
+                    android:id="@+id/gender_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/female_radiobtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female" />
+
+                    <RadioButton
+                        android:id="@+id/male_radiobtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Male" />
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:padding="3dip"
+                    android:text="Course Study" />
+
+                <EditText
+                    android:id="@+id/course"
+                    android:layout_width="189dp"
+                    android:layout_height="wrap_content"
+                    android:minWidth="50dip" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:padding="3dip"
+                    android:text="Address" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="189dp"
+                    android:layout_height="wrap_content"
+                    android:minWidth="50dip" />
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:padding="3dip"
+                    android:text="Age" />
+
+                <TextView
+                    android:id="@+id/age_tv"
+                    android:layout_width="166dp"
+                    android:text="Select your age please" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <NumberPicker
+                    android:id="@+id/picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/add_button"
+                    android:layout_width="194dp"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="Add Student Info" />
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
